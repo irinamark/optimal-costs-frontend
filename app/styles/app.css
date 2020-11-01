@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #039be5;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  height: 48px;
+  max-height: 48px;
+  width: 100%;
+  background-color: #039be5;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.balance {
+  margin-left: 10px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 10px;
+}
+
+.editBalance {
+  cursor: pointer;
+  padding: 5px 8px;
+  color: white;
+  border-radius: 50%;
+  transition: .5s;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.editBalance:hover {
+  transition: .5s;
+  background-color: #006db3;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.balanceBlock {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.rightButton {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  padding: 5px 8px;
+  color: white;
+  border-radius: 5%;
+  transition: .5s;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.rightButton:hover {
+  transition: .5s;
+  background-color: #006db3;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.addElement {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  padding: 1px 6px;
+  color: white;
+  border-radius: 50%;
+  transition: .5s;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  margin-left: 10px;
+  background-color: #039be5;
+}
+
+.addElement:hover{
+  transition: .5s;
+  background-color: #006db3;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.rightBlock {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 48px;
+}
+
+.column {
+  display: flex;
+  background-color: #039be5;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.columnHeader {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  justify-content: center;
+  height: 100%;
+  height: 32px;
+  background-color: #006db3;
+  margin-top: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.deleteElement {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  padding: 1px 7px;
+  color: white;
+  border-radius: 50%;
+  transition: .5s;
+  background-color: #039be5;
+}
+
+.deleteElement:hover {
+  transition: .5s;
+  background-color: #006db3;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.el {
+  width: 100%;
+}

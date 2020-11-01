@@ -56,5 +56,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "material-design-icons": "^3.0.1"
   }
 }

@@ -1,0 +1,104 @@
+<div class='main'>
+  <div class='header'>
+    <div class='balanceBlock'>
+      <span class='balance'> Общий бюджет: {{this.balance}}</span>
+      <a class='editBalance'>&#9998;</a>
+    </div>
+    <div class='rightBlock'>
+      <a class='rightButton'>Выбрать проект</a>
+      <a class='rightButton'>Изменить дату дедлайна</a>
+      {{!-- <LinkTo @route='auth' class='rightButton'>Выйти</LinkTo> --}}
+    </div>
+  </div>
+  <div class='content'>
+    <div class='column'>
+      <div class='columnHeader'>
+        <span class='headerTitle'>Персонал</span>
+        <a class='addElement'>+</a>
+      </div>
+      <table class='table'>
+        <tr>
+         <td class='el'> Иван </td>
+         <td> 100 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+        <tr>
+         <td class='el'> Петр </td>
+         <td> 100 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+        <tr>
+         <td class='el'> Сергей </td>
+         <td> 100 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+        <tr>
+         <td class='el'> Юрий Петрович </td>
+         <td> 100 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+        <tr>
+         <td class='el'> Алексей </td>
+         <td> 100 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+        <tr>
+         <td class='el'> Андрей </td>
+         <td> 100 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class='column'>
+      <div class='columnHeader'>
+        <span class='headerTitle'>Техника</span>
+        <a class='addElement'>+</a>
+      </div>
+      <table class='table'>
+        <tr>
+         <td class='el'> Компьютеры </td>
+         <td> 120000 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+        <tr>
+         <td class='el'> Принтер </td>
+         <td> 5000 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class='column'>
+      <div class='columnHeader'>
+        <span class='headerTitle'>Коммунальные услуги</span>
+        <a class='addElement'>+</a>
+      </div>
+      <table class='table'>
+        <tr>
+         <td class='el'> Вода </td>
+         <td> 1000 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+        <tr>
+         <td class='el'> Электроэнергия </td>
+         <td> 4000 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+        <tr>
+         <td class='el'> Отопление </td>
+         <td> 3000 </td>
+         <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class='column'>
+      <div class='columnHeader'>
+        <span class='headerTitle'>Остальное</span>
+        <a class='addElement'>+</a>
+      </div>
+      <table class='table'>
+
+      </table>
+    </div>
+  </div>
+</div>
+{{outlet}}

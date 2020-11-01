@@ -1,0 +1,25 @@
+<div class='mainPage'>
+  <div class='aboutText'>
+    Добро пожаловать в сервис для оптимального распределения финансов вашего проекта!
+  </div>
+  <div class='authForm'>
+    <form {{action "login" on="submit"}}>
+      <div>
+        <label for="name">Name</label>
+        {{!-- <input type="text" id="name" placeholder="name" value=form.name /> --}}
+        {{input type="text" id="name" placeholder="name" value=form.name}}
+      </div>
+      <div>
+        <label for="password">Password</label>
+        {{!-- <input type="password"  id="password" placeholder="password" value=form.password /> --}}
+        {{input type="password"  id="password" placeholder="password" value=form.password}}
+      </div>
+      <button type="submit" {{action "login"}}>
+        Login
+      </button>
+    </form>
+    {{!-- <div class='aboutText'>
+      Проект разработали студенты группы КТбо4-2: Ермоленко Дмитрий, Ирина Маркевич
+    </div> --}}
+  </div>
+</div>

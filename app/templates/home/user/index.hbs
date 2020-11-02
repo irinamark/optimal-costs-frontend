@@ -1,13 +1,13 @@
 <div class='main'>
   <div class='header'>
     <div class='balanceBlock'>
-      <span class='balance'> Общий бюджет: {{this.balance}}</span>
+      <span class='balance'> Общий бюджет: {{this.project.balance}}</span>
       <a class='editBalance'>&#9998;</a>
     </div>
     <div class='rightBlock'>
       <a class='rightButton'>Выбрать проект</a>
       <a class='rightButton'>Изменить дату дедлайна</a>
-      {{!-- <LinkTo @route='auth' class='rightButton'>Выйти</LinkTo> --}}
+      <LinkTo @route='home' class='rightButton'>Выйти</LinkTo>
     </div>
   </div>
   <div class='content'>
@@ -17,36 +17,13 @@
         <a class='addElement'>+</a>
       </div>
       <table class='table'>
+        {{#each this.workers as |worker|}}
         <tr>
-         <td class='el'> Иван </td>
-         <td> 100 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
+          <td class='el'> {{worker.title}} </td>
+          <td> {{worker.value}} </td>
+          <td><a class='deleteElement'>&#215;</a></td>
         </tr>
-        <tr>
-         <td class='el'> Петр </td>
-         <td> 100 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
-        </tr>
-        <tr>
-         <td class='el'> Сергей </td>
-         <td> 100 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
-        </tr>
-        <tr>
-         <td class='el'> Юрий Петрович </td>
-         <td> 100 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
-        </tr>
-        <tr>
-         <td class='el'> Алексей </td>
-         <td> 100 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
-        </tr>
-        <tr>
-         <td class='el'> Андрей </td>
-         <td> 100 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
-        </tr>
+        {{/each}}
       </table>
     </div>
     <div class='column'>
@@ -55,16 +32,13 @@
         <a class='addElement'>+</a>
       </div>
       <table class='table'>
+        {{#each this.equipments as |equipment|}}
         <tr>
-         <td class='el'> Компьютеры </td>
-         <td> 120000 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
+          <td class='el'> {{equipment.title }}</td>
+          <td> {{equipment.value}} </td>
+          <td><a class='deleteElement'>&#215;</a></td>
         </tr>
-        <tr>
-         <td class='el'> Принтер </td>
-         <td> 5000 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
-        </tr>
+        {{/each}}
       </table>
     </div>
     <div class='column'>
@@ -73,21 +47,13 @@
         <a class='addElement'>+</a>
       </div>
       <table class='table'>
+        {{#each this.utilities as |utility|}}
         <tr>
-         <td class='el'> Вода </td>
-         <td> 1000 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
+          <td class='el'>{{utility.title}}</td>
+          <td>{{utility.value}}</td>
+          <td><a class='deleteElement'>&#215;</a></td>
         </tr>
-        <tr>
-         <td class='el'> Электроэнергия </td>
-         <td> 4000 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
-        </tr>
-        <tr>
-         <td class='el'> Отопление </td>
-         <td> 3000 </td>
-         <td><a class='deleteElement'>&#215;</a></td>
-        </tr>
+        {{/each}}
       </table>
     </div>
     <div class='column'>
@@ -96,6 +62,13 @@
         <a class='addElement'>+</a>
       </div>
       <table class='table'>
+        {{#each this.others as |other|}}
+        <tr>
+          <td class='el'>{{other.title}}</td>
+          <td>{{other.value}}</td>
+          <td><a class='deleteElement'>&#215;</a></td>
+        </tr>
+        {{/each}}
 
       </table>
     </div>
